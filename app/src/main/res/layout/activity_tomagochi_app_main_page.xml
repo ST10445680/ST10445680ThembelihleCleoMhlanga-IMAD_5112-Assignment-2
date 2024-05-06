@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4FF81"
+    tools:context=".tomagochiAppMainPage">
+
+
+    <ImageView
+        android:id="@+id/imgMainPage"
+        android:layout_width="235dp"
+        android:layout_height="276dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginEnd="88dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/mainpage_jpg"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/btnFeed"
+        android:layout_width="151dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="375dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Feed"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintBottom_toTopOf="@+id/btnClean"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgMainPage" />
+
+    <Button
+        android:id="@+id/btnClean"
+        android:layout_width="147dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="375dp"
+        android:layout_marginBottom="45dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Clean"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintBottom_toTopOf="@+id/btnPlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFeed" />
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="153dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="375dp"
+        android:layout_marginBottom="95dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Play"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnClean" />
+
+    <ImageView
+        android:id="@+id/imgFeed"
+        android:layout_width="82dp"
+        android:layout_height="84dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/imgfeed"
+        tools:layout_editor_absoluteX="413dp"
+        tools:layout_editor_absoluteY="458dp" />
+
+    <ImageView
+        android:id="@+id/imgClean"
+        android:layout_width="103dp"
+        android:layout_height="95dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/imgclean"
+        tools:layout_editor_absoluteX="413dp"
+        tools:layout_editor_absoluteY="624dp" />
+
+    <TextView
+        android:id="@+id/statusFeed"
+        android:layout_width="352dp"
+        android:layout_height="84dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Status:"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="213dp"
+        tools:layout_editor_absoluteY="403dp" />
+
+    <TextView
+        android:id="@+id/statusClean"
+        android:layout_width="329dp"
+        android:layout_height="71dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Status:"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="213dp"
+        tools:layout_editor_absoluteY="572dp" />
+
+    <TextView
+        android:id="@+id/statusPlay"
+        android:layout_width="321dp"
+        android:layout_height="73dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Status:"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="221dp"
+        tools:layout_editor_absoluteY="748dp" />
+
+    <ImageView
+        android:id="@+id/imgPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/imgplay"
+        tools:layout_editor_absoluteX="464dp"
+        tools:layout_editor_absoluteY="456dp"
+        tools:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
